@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+<title> FAULT ANALYSIS PAGE </title>    
+    <meta name= viewport content= "width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="fault.css">
+	<link href="https://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    
+<body>
+    
+    <header>
+    <nav>
+			<div class="row clearfix">
+			<!--	<img src="images/AM17.jpg" class="AM17"> -->
+
+				<ul class="main-nav animated slideInDown" id="check-class">
+                    <li><a href="index.html">HOME</a></li>
+					<li><a href="Calibration.html">CALIBRATION</a></li>
+                    <li><a href="display.html">DISPLAY VALUES</a></li>
+                    <li><a href="current%20values.html">CURRENT VALUES</a></li>    
+                    
+                    
+               
+                    </ul>
+				<a href="#" class="mobile-icon"  onclick="slideshow()"> <i class="fa fa-bars"></i> </a>
+			</div>
+        <p style="position: absolute; top: 80px; text-align: justify">
+        
+In Hardware Part, the utilized components are listed and taken into the part. So we will be placing altogether six sensors each one having a pair of a superfluous and standard one. To enable these sensors we need to provide a desired amount of supply voltage and ground potential to atone the high frequency signals and nullify the capacitive effects. All of these connection of sensor is hold onto with AVR development board. And very importantly we are finding the faults and results for these three different sensors under the indistinguishable environmental conditions. So to create a difference between the temperatures ranges, will go for a hot water and a cold water to list out the values and identify the faults and cause of the faults. After we obtain the values for the sensors we will be delivering that values in a real time via bluetooth over an MIT based application. For that we have assembled an application on MIT App inventor which will be seeing in the lately Software part. When we are done with all the connection part we are now about to go for its testing part, to commence with the testing part we need to first run the code backendly via AVR Development board and burn it. So will be starting now with the testing part, let's go for temperature sensors we will keep one lead into the hot water and other in the cold water so this arrangement of the setup will create the temperature difference and according to our code if the difference hits the range which is greater than 2 degree celsius so this will be regarded as a fault which falls under the category of calibration error which is as discussed in the calibration part. So let's move on the ultrasonic sensor part as stated above we will differentiating ultrasonic sensor faults into three categories, When the objects are too far and too close this will be treated as a calibration fault. Also when the difference bonding betwixt the two sensors is less than 2 cm then there is fault in the sensor but as soon as the difference hits the estimation greater than 2 cm this will be thrown as faults. Likewise it has been coded for the Gas sensor which is explored in the above stated part. This the entire working of the hardware part along the software.
+As mentioned above about the software part we have had designed for our project with the aid of MIT application for delivering the real time data over the bluetooth so we also need to connect the Bluetooth module with our AVR Development Board. The main and important part of sensor coding is given above in the calibration part, we will now look forward for building up the Bluetooth app for receiving the real time data. 
+
+            
+            
+
+        
+        
+        
+        </p>
+        
+ <!--  <img src="0Capture.PNG" alt="VCC fault" style="position: absolute; left: 10px; top: 440px; width:600px;height:300px; image-resolution: from-image"> -->
+                
+                
+                <img src="IMG_20190412_135527%20(1).jpg" STYLE="position:absolute; TOP:400px; LEFT:440px; WIDTH:600px; HEIGHT:240px" > 
+
+                           
+           
+ <!--  <img src="Data%20line%20fault.PNG" alt="Norway" style="position: absolute; left: 40px; top:20px; width: 500px; height: 300px"> -->
+  <div class="text-block"> 
+    <h4>Analysis Of Faults</h4>
+    <p> Calibration Fault <br>VCC Pin Fault <br> Gnd Fault </p>
+  </div>
+		</nav>
+        </header>
+		
+    
+
+    
+</body>
+
+
+
+</html>
